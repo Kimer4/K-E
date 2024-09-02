@@ -1,0 +1,33 @@
+.label-text {
+  position: relative;
+  line-height: 28px;
+}
+.button,
+.state-layer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.state-layer {
+  justify-content: center;
+  padding: var(--padding-smi-5) var(--padding-xl);
+  box-sizing: border-box;
+}
+.button {
+  border-radius: var(--br-81xl);
+  background-color: var(--color-brown);
+  overflow: hidden;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--m3-title-large-size);
+  color: var(--schemes-on-primary);
+  font-family: var(--m3-title-large);
+}
+@media screen and (max-width: 450px) {
+  .label-text {
+    font-size: var(--font-size-lg);
+    line-height: 22px;
+  }
+}
